@@ -15,7 +15,7 @@ public class MoveC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 pos = this.transform.position;
+        Vector3 pos = this.transform.position;
 
         if (Input.GetKey(KeyCode.D))
         {
