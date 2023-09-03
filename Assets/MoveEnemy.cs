@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveC : MonoBehaviour
+public class MoveEnemy : MonoBehaviour
 {
-
-    private Rigidbody2D rigidbody = null;
+        private Rigidbody2D rigidbody = null;
     public float speed = 0.01f;
     private SpriteRenderer spriteRenderer = null;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -22,24 +21,24 @@ public class MoveC : MonoBehaviour
     {
         Vector3 pos = rigidbody.position;
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey("right"))
         {
             pos.x += speed;
             spriteRenderer.flipX = false;
         }
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey("left"))
         {
             pos.x -= speed;
             spriteRenderer.flipX = true;
         }
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey("up"))
         {
             pos.y += speed;
         }
 
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey("down"))
         {
             pos.y -= speed;
 

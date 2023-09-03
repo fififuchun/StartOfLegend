@@ -9,7 +9,7 @@ public class MoveCamera : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        chara = GameObject.Find("C1");
+        chara = GameObject.Find("Saca");
     }
 
     // Update is called once per frame
